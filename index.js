@@ -47,7 +47,7 @@ function total() {
   var cartPrices = [];
   var totalPrice = 0;
   for (var i = 0; i < cart.length; i++){
-    cartPrices.push(cart()[i].itemPrice); 
+    cartPrices.push(getCart()[i].itemPrice); 
   }
   for (var j = 0; j < cartPrices.length; j++){
     totalPrice = totalPrice += cartPrices[j];
