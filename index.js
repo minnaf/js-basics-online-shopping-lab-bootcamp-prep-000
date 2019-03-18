@@ -44,6 +44,18 @@ function viewCart() {
 
 function total() {
   // write your code here
+  var cartPrices = [];
+  var totalPrice = 0;
+  for (var i = 0; i < cart.length; i++){
+    cartPrices.push(cart()[i].itemPrice); 
+  }
+  for (var j = 0; j < cartPrices.length; j++){
+    totalPrice = totalPrice += cartPrices[j];
+  }
+  
+  return totalPrice;
+  
+  
 }
 
 function removeFromCart(item) {
